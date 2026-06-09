@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: retro-portfolio
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: SPRING_MAIL_PASSWORD
+        sync: false # User can provide this value during or after deployment on the Render dashboard

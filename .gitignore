@@ -1,0 +1,22 @@
+# Maven build outputs
+target/
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+.DS_Store
+
+# Local application secrets and config override
+src/main/resources/application-local.properties
+
+# Log files
+*.log
