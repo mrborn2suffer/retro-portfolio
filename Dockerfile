@@ -12,4 +12,4 @@ COPY --from=build /target/*.jar app.jar
 ENV PORT=10000
 EXPOSE 10000
 
-ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-Dspring.profiles.active=production", "-jar", "/app.jar"]
